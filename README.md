@@ -4,9 +4,9 @@ Nous voulons construire un système basé sur l'index fourni par le fichier `ind
 
 Les requêtes personnalisées entrées par l'utilisateur sont tokenisées et transformées, le token est obtenu et la liste de toutes les urls contenant le token est filtrée dans le fichier `index.json` correspondant et les résultats classés sont donnés.
 
-Par exemple, si l'utilisateur saisit `Wikipédia et google`, tous les liens url et titres pertinents sont stockés dans le fichier `result.json`. Les métadonnées sont stockées dans le fichier `metadata.json`, où
-* Total Index : le nombre de jetons convertis à partir des demandes des utilisateurs.
-* Filtered Index : le nombre de correspondances entre le token de requête de l'utilisateur et `l'index.json`. Dans ce cas, 'wikipédia', 'and' et 'google' apparaissent tous dans l'index.json. Dans le cas présent, 'wikipédia', 'and' et 'google' apparaissent tous dans la bibliothèque `index.json`, donc Total Index=Filter Index=3.
+Par exemple, si l'utilisateur saisit `wikipédia et google`, tous les liens url et titres pertinents sont stockés dans le fichier `result.json`. Les métadonnées sont stockées dans le fichier `metadata.json`, où
+* Total Index : le nombre de token convertis à partir des demandes des utilisateurs.
+* Filtered Index : le nombre de correspondances entre le token de requête de l'utilisateur et `l'index.json`. Dans ce cas, 'wikipédia', 'and' et 'google' apparaissent tous dans `index.json`, donc Total Index=Filter Index=3.
 * Total Records : le nombre d'entrées retournées dans le fichier `result.json`.
 
 ## Etapes de la mise en place
